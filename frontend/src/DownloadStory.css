@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.download-container{
+
+  min-height:100dvh;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  padding:20px;
+
+  background:
+  linear-gradient(
+    180deg,
+    #ffe4ec 0%,
+    #ffd7e5 100%
+  );
+
+  font-family:'Fredoka',sans-serif;
+}
+
+/* =========================
+   TITLE CARD
+========================= */
+
+.download-container h2{
+
+  width:100%;
+  max-width:360px;
+
+  background:
+  rgba(255,255,255,.22);
+
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+
+  border:
+  1.5px solid rgba(255,255,255,.45);
+
+  border-radius:30px;
+
+  padding:20px;
+
+  color:#ff9595;
+
+  font-size:30px;
+
+  font-weight:700;
+
+  text-align:center;
+
+  margin-bottom:18px;
+
+  box-shadow:
+  0 8px 32px rgba(31,38,135,.12);
+}
+
+/* =========================
+   PDF PREVIEW
+========================= */
+
+.download-container iframe{
+
+  width:100% !important;
+
+  max-width:500px;
+
+  height:520px !important;
+
+  border:none !important;
+
+  border-radius:30px !important;
+
+  background:white;
+
+  box-shadow:
+  0 8px 32px rgba(31,38,135,.12);
+
+  margin-bottom:20px;
+}
+
+/* =========================
+   DOWNLOAD BUTTON
+========================= */
+
+.download-btns{
+
+  width:100%;
+  max-width:450px;
+
+  height:64px;
+
+  border:none;
+
+  border-radius:35px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff9595,
+    #ffb4c8
+  );
+
+  color:white;
+
+  font-size:20px;
+  padding: 10px;
+
+  font-weight:700;
+
+  font-family:'Fredoka',sans-serif;
+
+  cursor:pointer;
+
+  box-shadow:
+  0 10px 30px
+  rgba(255,149,149,.35);
+
+  transition:.3s ease;
+}
+
+.download-btns:hover{
+
+  transform:translateY(-3px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width:768px)
+and (max-width:1024px){
+
+  .download-container h2{
+    max-width:550px;
+    font-size:48px;
+  }
+
+  .download-container iframe{
+    max-width:550px;
+    height:760px !important;
+  }
+
+  .download-btns{
+    max-width:550px;
+    height:72px;
+    font-size:24px;
+  }
+}
